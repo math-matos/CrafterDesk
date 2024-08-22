@@ -4,7 +4,7 @@ import Home from "./components/Home";
 import logo from "./assets/logo2.png";
 
 import "./css/HomePage.css";
-import { Button, Chip } from "@mui/material";
+import { Avatar, Box, Button, Chip, Grid, Typography } from "@mui/material";
 
 function App() {
   const videoURL =
@@ -18,13 +18,34 @@ function App() {
 
         {/* Hero Section */}
         <section className="hero">
-          <Chip
-            label="Super feature coming soon"
-            style={{ backgroundColor: "#FFED9E", marginBottom: 20 }}
-          />
-          <h1>
+          <Grid container xs={12}>
+            <Grid item xs={12}>
+              {/* <Box display="flex" alignItems={"center"} justifyContent={"center"} border={"1px solid grey"} borderRadius={10} >
+                <Avatar
+                  alt="Gojo Satouro"
+                  src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
+                />
+                <Avatar
+                  alt="Gojo Satouro"
+                  src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
+                />
+                <Avatar
+                  alt="Gojo Satouro"
+                  src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
+                />
+                <Box backgroundColor='cyan' borderRadius={3} p={1}>
+                  <Typography variant="subtitle1">+500</Typography>
+                </Box>
+              </Box> */}
+              <Chip
+                label="Super feature coming soon"
+                style={{ backgroundColor: "#FFED9E", marginBottom: 20 }}
+              />
+            </Grid>
+          </Grid>
+          <Typography variant="h1" fontWeight={600}>
             Your I.A assistant to help <br /> All Your services & chat support
-          </h1>
+          </Typography>
           <p>
             Final tool to work on a par with your, store everything in one
             place, <br /> and organize chats the way you want.
