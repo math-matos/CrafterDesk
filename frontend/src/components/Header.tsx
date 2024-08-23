@@ -14,7 +14,7 @@ export default function Header() {
       <nav className="nav-links">
         <a href="#features">Sobre o projeto</a>
         <a href="#contact">Contact</a>
-        <Button variant="contained" href="#signup" style={{ height: "3rem" }}>
+        <Button variant="contained" href="#signup" style={{ color: "white", height: "3rem" }}>
           Get Started
         </Button>
       </nav>

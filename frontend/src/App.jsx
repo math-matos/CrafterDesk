@@ -39,7 +39,12 @@ function App() {
               </Box> */}
               <Chip
                 label="Super feature coming soon"
-                style={{ backgroundColor: "#FFED9E", marginBottom: 20 }}
+                style={{
+                  backgroundColor: "#FFED9E",
+                  color: "#DB6E00",
+                  fontWeight: 600,
+                  marginBottom: 20
+                }}
               />
             </Grid>
           </Grid>
@@ -50,7 +55,7 @@ function App() {
             Final tool to work on a par with your, store everything in one
             place, <br /> and organize chats the way you want.
           </Typography>
-          <video width="70%" controls>
+          <video width="50%" controls>
             <source src={videoURL} type="video/mp4" />
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
@@ -60,26 +65,48 @@ function App() {
         <section id="features" className="features">
           <h2>About the project</h2>
           <div className="feature-list">
-            <div className="feature">
+            <div className="pricing-option">
               <h3>AI-Powered Content Generation</h3>
-              <p>
+              <Typography align="left" mt={1} mb={1}>
                 Generate articles, blog posts, and creative content with ease
                 using our AI-driven tools.
-              </p>
+              </Typography>
+              <img
+                src="https://www.testingcatalog.com/content/images/size/w2000/2024/02/photo_2024-02-10_20-48-19.jpg"
+                style={{ width: "350px", borderRadius: "2rem" }}
+              />
             </div>
-            <div className="feature">
+
+            <div className="pricing-option">
               <h3>Personalized Assistance</h3>
-              <p>
+              <Typography align="left" mt={1} mb={1}>
                 Get personalized AI suggestions and assistance tailored to your
                 needs.
-              </p>
+              </Typography>
+              <img
+                src="https://uploads.jovemnerd.com.br/wp-content/uploads/2022/12/animes_mais_aguardados_do_ano__2o6g5y62m.jpg"
+                style={{
+                  width: "350px",
+                  minHeight: "12rem",
+                  borderRadius: "2rem"
+                }}
+              />
             </div>
-            <div className="feature">
+
+            <div className="pricing-option">
               <h3>Workflow Integration</h3>
-              <p>
+              <Typography align="left" mt={1} mb={1}>
                 Integrate with your existing tools and workflows to maximize
                 efficiency.
-              </p>
+              </Typography>
+              <img
+                src="https://occ-0-8407-2219.1.nflxso.net/dnm/api/v6/E8vDc_W8CLv7-yMQu8KMEC7Rrr8/AAAABc_IAP39hj-kZ8BSec3IQ3zMRFLQvuxISsTH0WbVmISwOd7_gNPUA19gEwg5EkWJFdPrVyeOrDxhCFi08qjHYzABVNdsJHmlQjpw.jpg?r=920"
+                style={{
+                  width: "350px",
+                  minHeight: "12rem",
+                  borderRadius: "2rem"
+                }}
+              />
             </div>
           </div>
         </section>

@@ -3,8 +3,13 @@ body,
 html {
   margin: 0;
   padding: 0;
-  font-family: Inter, sans-serif;
+  font-family: Onest, Onest Placeholder, sans-serif;
   color: #000;
+
+  background-image: url("../assets/Background.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .container {
@@ -18,9 +23,8 @@ html {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
-  background-color: #fff;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  padding: 10px 10rem 10px 10rem;
 }
 
 .logo {
@@ -33,20 +37,20 @@ html {
 .nav-links a {
   margin: 0 15px;
   text-decoration: none;
-  color: #333;
+  color: black;
 }
 
 /* Hero Section */
 .hero {
   text-align: center;
   padding: 50px 20px;
-  background-color: #f9f9f9;
+  //background-color: #fff;
 }
 
 .hero p {
   font-size: 20px;
   margin-bottom: 40px;
-  color: #666;
+  color: #777;
 }
 
 /* Features Section */
@@ -54,12 +58,16 @@ html {
   padding: 80px 20px;
   background-color: #fff;
   text-align: center;
+
+  background-image: url("../assets/Background.png");
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #333;
 }
 
 .feature-list {
@@ -82,7 +90,7 @@ html {
 
 .feature p {
   font-size: 16px;
-  color: #666;
+  color: #777;
 }
 
 /* Pricing Section */
@@ -95,7 +103,6 @@ html {
 .pricing h2 {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #333;
 }
 
 .pricing-list {
@@ -106,23 +113,24 @@ html {
 
 .pricing-option {
   flex: 1;
-  max-width: 300px;
+  max-width: 400px;
   margin: 20px;
   padding: 20px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  background-color: #fff;
+  border-radius: 1rem;
+
+  background-color: rgba(255, 255, 255, 0.2);
+  -webkit-backdrop-filter: blur(5px);
+  backdrop-filter: blur(5px);
 }
 
 .pricing-option h3 {
   font-size: 24px;
   margin-bottom: 20px;
-  color: #333;
 }
 
 .pricing-option p {
   font-size: 16px;
-  color: #666;
+  color: #777;
 }
 
 .price {
@@ -142,13 +150,12 @@ html {
 .contact h2 {
   font-size: 36px;
   margin-bottom: 40px;
-  color: #333;
 }
 
 .contact p {
   font-size: 20px;
   margin-bottom: 20px;
-  color: #666;
+  color: #777;
 }
 
 .contact-btn {
