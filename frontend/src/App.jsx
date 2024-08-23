@@ -46,19 +46,19 @@ function App() {
           <Typography variant="h1" fontWeight={600}>
             Your I.A assistant to help <br /> All Your services & chat support
           </Typography>
-          <p>
+          <Typography mt={2}>
             Final tool to work on a par with your, store everything in one
             place, <br /> and organize chats the way you want.
-          </p>
+          </Typography>
           <video width="70%" controls>
             <source src={videoURL} type="video/mp4" />
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
         </section>
 
-        {/* Features Section */}
+        {/* About the project Section */}
         <section id="features" className="features">
-          <h2>Features</h2>
+          <h2>About the project</h2>
           <div className="feature-list">
             <div className="feature">
               <h3>AI-Powered Content Generation</h3>
@@ -86,48 +86,96 @@ function App() {
 
         {/* Pricing Section */}
         <section id="pricing" className="pricing">
-          <h2>Pricing</h2>
+          <Typography variant="h2" fontWeight={600} style={{ color: "black" }}>
+            Pricing Plans
+          </Typography>
+          <Typography>
+            Life is short why spent to design from scratch, Use finalui
+            templates and its dummy <br /> text like lorem ipsum dolor sit amet,
+            consectetur adipiscing elit.
+          </Typography>
           <div className="pricing-list">
             <div className="pricing-option">
               <h3>Free Plan</h3>
-              <p>
+              <Typography
+                align="left"
+                fontWeight={800}
+                style={{ fontSize: 50, color: "black" }}>
+                $0
+              </Typography>
+              <Typography align="left" mt={1} mb={1}>
                 Basic features to get you started with AI-generated content.
-              </p>
-              <p className="price">$0</p>
+              </Typography>
+              <Typography align="left">✅ 1000 requests</Typography>
+              <Typography align="left">✅ Suport by Author</Typography>
+              <Typography align="left" mb={2}>
+                ✅ Imaginary feature
+              </Typography>
+              <Button variant="outlined" fullWidth>
+                GET STARTED
+              </Button>
             </div>
+
             <div className="pricing-option">
               <h3>Pro Plan</h3>
-              <p>Advanced features and integrations for professionals.</p>
-              <p className="price">$29/mo</p>
+              <Typography
+                align="left"
+                fontWeight={800}
+                style={{ fontSize: 50, color: "black" }}>
+                $0
+              </Typography>
+              <Typography align="left" mt={1} mb={1}>
+                Advanced features and integrations for professionals.
+              </Typography>
+              <Typography align="left">✅ 2000 requests</Typography>
+              <Typography align="left">✅ Suport by Author</Typography>
+              <Typography align="left" mb={2}>
+                ✅ Imaginary feature
+              </Typography>
+              <Button variant="contained" fullWidth>
+                GET STARTED
+              </Button>
             </div>
+
             <div className="pricing-option">
               <h3>Enterprise Plan</h3>
-              <p>
+              <Typography
+                align="left"
+                fontWeight={800}
+                style={{ fontSize: 50, color: "black" }}>
+                $Offer
+              </Typography>
+              <Typography align="left" mt={1} mb={1}>
                 Full access to all features, custom solutions, and dedicated
                 support.
-              </p>
-              <p className="price">Contact Us</p>
+              </Typography>
+              <Typography align="left">✅ 2000 requests</Typography>
+              <Typography align="left">✅ Suport by Author</Typography>
+              <Typography align="left" mb={2}>
+                ✅ Imaginary feature
+              </Typography>
+              <Button variant="outlined" fullWidth>
+                Contact Us
+              </Button>
             </div>
           </div>
         </section>
 
-        {/* Contact Section */}
-        <section id="contact" className="contact">
-          <h2>Contact Us</h2>
-          <p>Have questions? Get in touch with our team!</p>
-          <Button
-            href="mailto:contatomathmatos@gmail.com"
-            variant="contained"
-            style={{ height: "3rem" }}>
-            Email Us
-          </Button>
-        </section>
-
         {/* Footer */}
         <footer className="footer">
-          <p>
-            &copy; {new Date().getFullYear()} Craft Desk. All rights reserved.
-          </p>
+          <Box
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+            gap={2}>
+            <p>
+              &copy; {new Date().getFullYear()} Craft Desk. All rights reserved.
+            </p>
+            <p>Have questions? Get in touch with our team!</p>
+            <a href="mailto:contatomathmatos@gmail.com">
+              contatomathmatos@gmail.com
+            </a>
+          </Box>
         </footer>
       </div>
       {/* 
