@@ -19,3 +19,10 @@ function sendMessage() {
     }
 }
 
+document.getElementById("chatInput").addEventListener("keydown", function(event) {
+    if (event.key === "Enter") {
+        sendMessage();
+        event.preventDefault(); // Prevents the default action of adding a new line
+    }
+})
+
