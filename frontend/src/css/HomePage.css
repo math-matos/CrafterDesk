@@ -6,7 +6,12 @@ html {
   font-family: Onest, Onest Placeholder, sans-serif;
   color: #000;
 
-  background-image: url("../assets/Background.png");
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 70%,
+      #f9f9f9 100%
+    ),
+    url("../assets/Background.png");
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -44,13 +49,12 @@ html {
 .hero {
   text-align: center;
   padding: 50px 20px;
-  //background-color: #fff;
 }
 
 .hero p {
   font-size: 20px;
   margin-bottom: 40px;
-  color: #777;
+  color: #777
 }
 
 /* Features Section */
@@ -59,7 +63,13 @@ html {
   background-color: #fff;
   text-align: center;
 
-  background-image: url("../assets/Background.png");
+  background: linear-gradient(
+      to bottom,
+      rgba(255, 255, 255, 0) 70%,
+      #f9f9f9 100%
+    ),
+    url("../assets/Background.png") no-repeat center center;
+  background-size: cover;
   height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
@@ -171,6 +181,8 @@ html {
 .footer {
   text-align: center;
   padding: 20px;
-  background-color: #333;
-  color: #fff;
+  background: linear-gradient(to top, rgba(255, 255, 255, 0) 70%, #f9f9f9 100%),
+    url("../assets/Background.png") no-repeat center center;
+  background-size: cover;
+  color: black;
 }
