@@ -5,14 +5,31 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="/src/chat.css">
     <link
       href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
       rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Craft Desk</title>
+    <title>Crafter Desk</title>
   </head>
   <body>
     <div id="root"></div>
+    <div class="chat-popup" id="chatPopup">
+        <div class="chat-header">
+            <span class="chat-title">Help Crafter</span>
+            <button type="button" class="close-btn" onclick="closeChat()">×</button>
+        </div>
+        <div class="chat-body" id="chatBody">
+            <p>Hello! How can I help you today?</p>
+        </div>
+        <div class="chat-footer">
+            <input type="text" id="chatInput" placeholder="Type your message here...">
+            <button type="button" onclick="sendMessage()">Send</button>
+        </div>
+    </div>
+    <button class="open-button" onclick="openChat()">Chat with us</button>
+    <script src="/src/chat.js"></script>
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
