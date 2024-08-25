@@ -70,7 +70,6 @@ html {
     ),
     url("../assets/Background.png") no-repeat center center;
   background-size: cover;
-  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
 }
