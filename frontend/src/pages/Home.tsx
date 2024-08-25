@@ -1,12 +1,11 @@
-import Footer from "./components/Footer";
-import Header from "./components/Header";
-import Home from "./components/Home";
-import logo from "./assets/logo2.png";
+import React from "react";
 
-import "./css/HomePage.css";
+import Header from "../components/Header";
+
+import "../css/HomePage.css";
 import { Avatar, Box, Button, Chip, Grid, Typography } from "@mui/material";
 
-function App() {
+export default function Home() {
   const videoURL =
     "https://drive.google.com/uc?export=download&id=11HQpdzJT0jMauWRDCpWDv-OVmJjdWWYx";
 
@@ -21,22 +20,22 @@ function App() {
           <Grid container xs={12}>
             <Grid item xs={12}>
               {/* <Box display="flex" alignItems={"center"} justifyContent={"center"} border={"1px solid grey"} borderRadius={10} >
-                <Avatar
-                  alt="Gojo Satouro"
-                  src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
-                />
-                <Avatar
-                  alt="Gojo Satouro"
-                  src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
-                />
-                <Avatar
-                  alt="Gojo Satouro"
-                  src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
-                />
-                <Box backgroundColor='cyan' borderRadius={3} p={1}>
-                  <Typography variant="subtitle1">+500</Typography>
-                </Box>
-              </Box> */}
+                    <Avatar
+                      alt="Gojo Satouro"
+                      src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
+                    />
+                    <Avatar
+                      alt="Gojo Satouro"
+                      src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
+                    />
+                    <Avatar
+                      alt="Gojo Satouro"
+                      src="https://dimensaosete.com.br/static/7fc311549694666167a49cdb0fb1293c/2493a/gojo.webp"
+                    />
+                    <Box backgroundColor='cyan' borderRadius={3} p={1}>
+                      <Typography variant="subtitle1">+500</Typography>
+                    </Box>
+                  </Box> */}
               <Chip
                 label="Super feature coming soon"
                 style={{
@@ -56,7 +55,10 @@ function App() {
             place, <br /> and organize chats the way you want.
           </Typography>
           <video width="50%" controls>
-            <source src={videoURL} type="video/mp4" />
+            <source
+              src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
+              type="video/mp4"
+            />
             Seu navegador não suporta o elemento <code>video</code>.
           </video>
         </section>
@@ -206,10 +208,7 @@ function App() {
         </footer>
       </div>
       {/* 
-      <Home />
-      <Footer /> */}
+          <Footer /> */}
     </>
   );
 }
-
-export default App;
