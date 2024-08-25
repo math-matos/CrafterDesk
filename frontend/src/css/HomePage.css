@@ -48,13 +48,12 @@ html {
 /* Hero Section */
 .hero {
   text-align: center;
-  padding: 50px 20px;
 }
 
 .hero p {
   font-size: 20px;
   margin-bottom: 40px;
-  color: #777
+  color: #777;
 }
 
 /* Features Section */
@@ -64,11 +63,14 @@ html {
   text-align: center;
 
   background: linear-gradient(
-      to bottom,
-      rgba(255, 255, 255, 0) 70%,
-      #f9f9f9 100%
-    ),
-    url("../assets/Background.png") no-repeat center center;
+        to bottom,
+        rgba(255, 255, 255, 0) 70%,
+        #f9f9f9 100%
+      )
+      top/100% 50% no-repeat,
+    linear-gradient(to top, rgba(255, 255, 255, 0) 70%, #f9f9f9 100%)
+      bottom/100% 50% no-repeat,
+    url("../assets/Background.png") center center/cover no-repeat;
   background-size: cover;
   background-repeat: no-repeat;
   background-size: cover;

@@ -5,34 +5,26 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link rel="stylesheet" href="./src/css/chat.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Onest:wght@100..900&display=swap"
       rel="stylesheet" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="text/javascript">
+      window.$crisp = [];
+      window.CRISP_WEBSITE_ID = "69249197-41fb-48e0-8299-dc8cef49032d";
+      (function () {
+        d = document;
+        s = d.createElement("script");
+        s.src = "https://client.crisp.chat/l.js";
+        s.async = 1;
+        d.getElementsByTagName("head")[0].appendChild(s);
+      })();
+    </script>
     <title>Crafter Desk</title>
   </head>
   <body>
     <div id="root"></div>
-    <div class="chat-popup" id="chatPopup">
-      <div class="chat-header">
-        <span class="chat-title">Help Crafter</span>
-        <button type="button" class="close-btn" onclick="closeChat()">×</button>
-      </div>
-      <div class="chat-body" id="chatBody">
-        <p>Ola! Como podemos te ajudar hoje?</p>
-      </div>
-      <div class="chat-footer">
-        <input
-          type="text"
-          id="chatInput"
-          placeholder="Digite sua mensagem..." />
-        <button type="button" onclick="sendMessage()">Enviar</button>
-      </div>
-    </div>
-    <button class="open-button" onclick="openChat()">Fale com a gente</button>
-    <script src="./src/js/chat.js"></script>
+
     <script type="module" src="/src/main.jsx"></script>
   </body>
 </html>
