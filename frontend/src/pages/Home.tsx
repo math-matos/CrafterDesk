@@ -75,7 +75,7 @@ export default function Home() {
               </Typography>
               <img
                 src="https://www.testingcatalog.com/content/images/size/w2000/2024/02/photo_2024-02-10_20-48-19.jpg"
-                style={{ width: "350px", borderRadius: "2rem" }}
+                style={{ width: "350px", marginTop: 2, borderRadius: "2rem" }}
               />
             </div>
 
@@ -90,6 +90,7 @@ export default function Home() {
                 style={{
                   width: "350px",
                   minHeight: "12rem",
+                  marginTop: 2,
                   borderRadius: "2rem"
                 }}
               />
@@ -106,6 +107,7 @@ export default function Home() {
                 style={{
                   width: "350px",
                   minHeight: "12rem",
+                  marginTop: 2,
                   borderRadius: "2rem"
                 }}
               />
@@ -140,7 +142,7 @@ export default function Home() {
               <Typography align="left" mb={2}>
                 ✅ Imaginary feature
               </Typography>
-              <Button variant="outlined" fullWidth>
+              <Button variant="outlined" href="/chat" fullWidth>
                 GET STARTED
               </Button>
             </div>
@@ -161,7 +163,7 @@ export default function Home() {
               <Typography align="left" mb={2}>
                 ✅ Imaginary feature
               </Typography>
-              <Button variant="contained" fullWidth>
+              <Button variant="contained" href="/chat" fullWidth>
                 GET STARTED
               </Button>
             </div>
@@ -183,7 +185,7 @@ export default function Home() {
               <Typography align="left" mb={2}>
                 ✅ Imaginary feature
               </Typography>
-              <Button variant="outlined" fullWidth>
+              <Button variant="outlined" href="/chat" fullWidth>
                 Contact Us
               </Button>
             </div>
@@ -207,8 +209,6 @@ export default function Home() {
           </Box>
         </footer>
       </div>
-      {/* 
-          <Footer /> */}
     </>
   );
 }
