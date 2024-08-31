@@ -35,8 +35,8 @@ export default function Chat() {
       <div className="Column">
         <h3 className="Title">Chat Messages</h3>
         <div className="Content">
-          {messages.map((el, i) => {
-            return <Message key={i} role={el.role} content={el.content} />;
+          {messages.map((el, index) => {
+            return <Message key={index} role={el.role} content={el.content} />;
           })}
         </div>
         <Input
@@ -49,10 +49,10 @@ export default function Chat() {
       <div className="Column">
         <h3 className="Title">History</h3>
         <div className="Content">
-          {history.map((el, i) => {
+          {history.map((el, index) => {
             return (
               <History
-                key={i}
+                key={index}
                 question={el.question}
                 onClick={() =>
                   setMessages([

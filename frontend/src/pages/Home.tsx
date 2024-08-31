@@ -54,13 +54,21 @@ export default function Home() {
             Final tool to work on a par with your, store everything in one
             place, <br /> and organize chats the way you want.
           </Typography>
-          <video width="50%" controls>
-            <source
-              src="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
-              type="video/mp4"
-            />
-            Seu navegador não suporta o elemento <code>video</code>.
-          </video>
+          {/* <img
+            src="https://cdn.discordapp.com/attachments/988524143400067084/1279254762914840647/Novo_Projeto.png?ex=66d3c656&is=66d274d6&hm=08fe2aeefc0d1464a5a5dc38fc24aa1194bc157e84a26e2dd090690d9841a0ad&"
+            alt=""
+            style={{ boxShadow: "7px 0 20px gray", width: "45%" }}
+          /> */}
+          <iframe
+            src="https://www.youtube.com/embed/3lxAYH3k1fk?autoplay=1"
+            style={{
+              width: "50%",
+              height: "30rem"
+            }}
+            allow="autoplay"
+            allowFullScreen
+            title="YouTube Video"
+          />
         </section>
 
         {/* About the project Section */}
