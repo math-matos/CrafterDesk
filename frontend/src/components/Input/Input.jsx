@@ -1,6 +1,6 @@
 import styles from "./Input.module.css";
 
-export default function Input({ value, onChange, onClick }) {
+export default function Input({ value, onChange, onClick, disabled }) {
   return (
     <div className={styles.wrapper}>
       <input
@@ -9,7 +9,7 @@ export default function Input({ value, onChange, onClick }) {
         value={value}
         onChange={onChange}
       />
-      <button className={styles.btn} onClick={onClick}>
+      <button className={styles.btn} onClick={onClick} disabled={disabled}>
         Go
       </button>
     </div>
