@@ -1,5 +1,5 @@
 
-# Suporte Futuro
+# Craft Desk
 
 Um projeto com Inteligiencia Artificial Generativa com foco em ajudar as empresas a atenderem melhores seus clientes e dar um suporte futuristico.
 
@@ -21,12 +21,3 @@ Instale my-project com npm
   npm install my-project
   cd my-project
 ```
-    
-## Deploy
-
-Para fazer o deploy desse projeto rode
-
-```bash
-  npm run Future-Support
-```
-
