@@ -7,7 +7,7 @@ import entities.AtendenteNeve;
 
 public class main {
     public static void main(String[] args) {
-        AtendenteClima[] atendentes = {
+           AtendenteClima[] atendentes = {
             new AtendenteSol("Sol"),
             new AtendenteChuva("Chuva"),
             new AtendenteNeve("Neve")

@@ -1,0 +1,15 @@
+[
+    {
+      "nome": "Sol",
+      "sugerirAtividade": "Está um dia ensolarado! Que tal aproveitar para fazer uma caminhada ao ar livre ou um piquenique?"
+    },
+    {
+      "nome": "Chuva",
+      "sugerirAtividade": "Está chovendo! Talvez seja uma boa ideia assistir a um filme ou ler um bom livro."
+    },
+    {
+      "nome": "Neve",
+      "sugerirAtividade": "Está nevando! Que tal construir um boneco de neve ou praticar esqui?"
+    }
+  ]
+  
