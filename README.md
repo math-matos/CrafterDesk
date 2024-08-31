@@ -21,12 +21,3 @@ Instale my-project com npm
   npm install my-project
   cd my-project
 ```
-    
-## Deploy
-
-Para fazer o deploy desse projeto rode
-
-```bash
-  npm run Future-Support
-```
-
