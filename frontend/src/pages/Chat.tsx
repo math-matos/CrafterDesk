@@ -8,6 +8,7 @@ import Clear from "../components/Clear/Clear";
 import "../App.css";
 
 export default function Chat() {
+  const [waitResponse, setWaitResponse] = useState(false);
   const [input, setInput] = useState("");
   const [messages, setMessages] = useState([]);
   const [history, setHistory] = useState([]);
@@ -17,13 +18,16 @@ export default function Chat() {
       role: "user",
       content: input
     };
-
     setMessages([...messages, prompt]);
+    setInput("");
+    setWaitResponse(true)
   };
 
   const clear = () => {
     setMessages([]);
     setHistory([]);
+    setInput("");
+    setWaitResponse(false)
   };
 
   return (
@@ -37,6 +41,7 @@ export default function Chat() {
         </div>
         <Input
           value={input}
+          disabled={waitResponse ? "disabled" : ""}
           onChange={(e) => setInput(e.target.value)}
           onClick={input ? handleSubmit : undefined}
         />
