@@ -1,5 +1,5 @@
 
-# Suporte Futuro
+# Craft Desk
 
 Um projeto com Inteligiencia Artificial Generativa com foco em ajudar as empresas a atenderem melhores seus clientes e dar um suporte futuristico.
 
